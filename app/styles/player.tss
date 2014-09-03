@@ -1,0 +1,42 @@
+
+
+".container" : {
+	title: 'Player',
+	backgroundColor: 'white'
+}
+
+
+	
+
+
+
+"#playPauseBtn": {
+	top: '60dp',
+	font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+}
+
+"#stopBtn": {
+	top: '80dp',
+	font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+}
+
+
+"#audioTextLbl": {
+	top: '30dp',
+	font: {
+		fontSize: '16dp',
+		fonWeight: 'normal'
+	}}
+	
+"#groupTextLbl": {
+	top: '10dp',
+	font: {
+		fontSize: '16dp',
+		fonWeight: 'normal'
+	}}

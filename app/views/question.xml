@@ -1,0 +1,10 @@
+<Alloy>
+<Window id="question"  class="container">
+		<Label id="question">Q : </Label>
+		<Label id="ch1"> A: </Label>
+		<Label id="ch2">B: </Label>
+		<Label id="ch3">C: </Label>						
+</Window>
+	
+
+</Alloy>

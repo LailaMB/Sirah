@@ -1,0 +1,25 @@
+<Alloy>
+	<Collection src="sirah"/>
+	<Collection src="groups"/>
+
+	<NavigationWindow id="index" platform="ios" formFactor="handheld">
+
+<!-- App.formFactor - Used for the different form factored layouts e.g. tablet / handheld -->
+
+		<Window class="container">
+			<ListView id="lst" defaultItemTemplate="listItemTemp" onItemclick="openDetails">
+				
+<!-- http://docs.appcelerator.com/titanium/latest/#!/guide/ListViews 	-->			
+				<Templates>
+					<ItemTemplate name="listItemTemp" >
+						<Label bindId="title" />
+					</ItemTemplate>
+				</Templates>
+				
+				<ListSection dataCollection="groups">
+					<ListItem title:text="{title}"/>
+				</ListSection>
+			</ListView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

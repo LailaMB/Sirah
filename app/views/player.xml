@@ -1,0 +1,10 @@
+<Alloy>
+	<Window class="container">
+		<Label id="groupTextLbl"></Label>
+		<Label id="audioTextLbl"></Label>
+		<Button id="playPauseBtn" onClick="playtrack" >Play / Pause </Button>
+		<Button id="stopBtn" onClick="stopTrack"> Stop </Button>
+		<Button id="showQuestion" onClick="showQuestion"> Show Question </Button>
+		
+	</Window>
+</Alloy>

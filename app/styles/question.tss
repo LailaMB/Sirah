@@ -1,0 +1,38 @@
+
+".container" : {
+  	title: 'Question',
+	backgroundColor: 'white'
+}
+
+
+"#question": {
+	top: '60dp',
+	font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+}
+
+"#ch1": {
+	top: '80dp',
+	font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+}
+
+
+"#ch2": {
+	top: '30dp',
+	font: {
+		fontSize: '16dp',
+		fonWeight: 'normal'
+	}}
+	
+"#ch3": {
+	top: '10dp',
+	font: {
+		fontSize: '16dp',
+		fonWeight: 'normal'
+	}}
+
