@@ -40,3 +40,13 @@
 		fontSize: '16dp',
 		fonWeight: 'normal'
 	}}
+	
+"#showQuestion": {
+	top: '110dp',
+
+}
+
+"#duration": {
+	top: '140dp',
+
+}
