@@ -1,0 +1,10 @@
+
+".container" : {
+  	backgroundColor:"white"
+}
+
+"#homebtn":
+{	top:"80dp",
+	left:"250dp"
+	
+}

@@ -1,0 +1,22 @@
+".container": {
+	title: 'Group List',
+	backgroundColor:"white"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+} 
+
+"#label": {
+	font: {
+		fontSize: 12
+	}
+}
+
+"#homebtn":
+{	top:"80dp",
+	left:"250dp"
+	
+}
+

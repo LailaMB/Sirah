@@ -5,15 +5,7 @@
 }
 
 
-"#question": {
-	top: '60dp',
-	font: {
-		fontSize: '20dp',
-		fontWeight: 'bold'
-	}
-}
-
-"#ch1": {
+"#questiontxt": {
 	top: '80dp',
 	font: {
 		fontSize: '20dp',
@@ -22,17 +14,67 @@
 }
 
 
-"#ch2": {
-	top: '30dp',
+"#ch1": {
+	top: '150dp',
 	font: {
-		fontSize: '16dp',
-		fonWeight: 'normal'
-	}}
-	
-"#ch3": {
-	top: '10dp',
-	font: {
-		fontSize: '16dp',
-		fonWeight: 'normal'
-	}}
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	borderColor: '#666',
+    borderWidth: 2,
+    borderRadius: 3,
+    backgroundColor: '#fff',
+    backgroundImage: 'none',
+    color: '#fff',
+    font:{fontSize: 25, fontWeight: 'bold'},
+    value: false
+}
 
+"#ch2": {
+	top: '230dp',
+		font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	borderColor: '#666',
+    borderWidth: 2,
+    borderRadius: 3,
+    backgroundColor: '#fff',
+    backgroundImage: 'none',
+    color: '#fff',
+    font:{fontSize: 25, fontWeight: 'bold'},
+    value: false
+}
+
+
+"#ch3": {
+	top: '300dp',
+		font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	borderColor: '#666',
+    borderWidth: 2,
+    borderRadius: 3,
+    backgroundColor: '#fff',
+    backgroundImage: 'none',
+    color: '#fff',
+    font:{fontSize: 25, fontWeight: 'bold'},
+    value: false
+}
+
+
+
+
+
+"#homebtn":
+{	top:"40dp",
+	left:"250dp"
+	
+}
+
+"#nxtAudiobtn":
+{
+	top:"400dp",
+	
+}

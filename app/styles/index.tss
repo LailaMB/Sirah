@@ -1,4 +1,5 @@
 ".container": {
+	title: 'Index',
 	backgroundColor:"white"
 },
 "Label": {
@@ -7,7 +8,22 @@
 	color: "#000"
 } 
 
-"#label": {
+"#openList": {
+	top: '180dp',
+	font: {
+		fontSize: 12
+	}
+}
+
+"#openAboutUs": {
+	top: '230dp',
+	font: {
+		fontSize: 12
+	}
+}
+
+"#openInfo": {
+	top: '280dp',
 	font: {
 		fontSize: 12
 	}

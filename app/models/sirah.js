@@ -5,7 +5,6 @@ exports.definition = {
 			groupid: 'TEXT',
 			audionumber: 'TEXT',
 			audiotext: 'TEXT',
-			audionumber: 'TEXT',
 			questiontext: 'TEXT',
 			ch1: 'TEXT',
 			ch2: 'TEXT',

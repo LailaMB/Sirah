@@ -1,23 +1,29 @@
 
 var args = arguments[0] || {};
 
+var epindex=args.sirah.get('id');
+
+var audionum=args.sirah.get('audionumber'); 
 $.audioTextLbl.text = args.sirah.get('audiotext');
 $.groupTextLbl.text = args.group.get('title');
+
+
 
 var q={
 	question:args.sirah.get('questiontext'),
 	ch1:args.sirah.get('ch1'),
 	ch2:args.sirah.get('ch2'),
 	ch3:args.sirah.get('ch3'),
-	correct:args.sirah.get('correct')
+	correct:args.sirah.get('correct'),
+	groupid:args.sirah.get('groupid'),
+	id:args.sirah.get('id')
 };
 
 	
-console.log(q);
 
 
 
-var audionum=args.sirah.get('audionumber'); 
+
 var audioPlayer = Ti.Media.createAudioPlayer({ 
     url: "http://islam-call.com/uploads/Audio/1273/"+audionum+".mp3",
     allowBackground: true
@@ -45,6 +51,7 @@ function stopTrack() {
         { 
             audioPlayer.release();
         }  }
+
 
 audioPlayer.addEventListener('progress',function(e) 
 {
@@ -91,5 +98,13 @@ $.timeBar.addEventListener('click',function(e){
         
         
  function showQuestion() {
- // var questionWin=Alloy.createController('question',q).getView().open();
+ 	var questionWin=Alloy.createController('question',{question:q,index:epindex}).getView().open();
+    $.player.close();
 };
+
+
+function backHome(){
+
+$.player.close();
+	
+}

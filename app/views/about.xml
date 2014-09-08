@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id="about">
+		<View class="container">
+		<Button id="homebtn" onClick="backHome"> Home </Button>	
+		<Label> This is About Us </Label>
+		</View>
+	</Window>
+</Alloy>

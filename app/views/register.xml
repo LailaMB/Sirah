@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="register" class="container">
+	<View class="container">
+		<Label id="grptxt"></Label>
+		<Label id="scoretxt"></Label>
+		<TextField id="name" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" top="150" left="10" width="250" height="30" />
+		<TextField id="phoneNumber" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" top="200" left="10" width="250" height="30" />
+	
+	</View>
+	</Window>
+</Alloy>

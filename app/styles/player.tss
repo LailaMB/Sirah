@@ -50,3 +50,19 @@
 	top: '140dp',
 
 }
+
+
+
+"#nextAudio": {
+	top: '30dp',
+	font: {
+		fontSize: '16dp',
+		fonWeight: 'normal'
+	}}
+	
+
+"#homebtn":
+{	top:"80dp",
+	left:"250dp"
+	
+}
