@@ -7,6 +7,13 @@ var audionum=args.sirah.get('audionumber');
 $.audioTextLbl.text = args.sirah.get('audiotext');
 $.groupTextLbl.text = args.group.get('title');
 
+var pageNumber= epindex%6;
+if (pageNumber == 0)
+{
+	pageNumber = 6 ;
+}
+$.pageNumber.text = pageNumber + "/6";
+
 
 
 var q={
@@ -39,7 +46,18 @@ function playtrack () {
     }
     else
     {
-        audioPlayer.start();
+    	if (Titanium.Network.online==false)
+    	{
+    		 audioPlayer.pause();
+    		console.log("no connection");
+    		alert("فضلا تحقق من الاتصال");
+    	}
+    	else
+    	{
+    		console.log(" connection");
+    		audioPlayer.start();
+    	}
+        
     }
 };
 
@@ -55,24 +73,28 @@ function stopTrack() {
 
 audioPlayer.addEventListener('progress',function(e) 
 {
-  
+  var value=0;
      if (Ti.Platform.name === 'android')
         { 
    var playedTime=formatTime(Math.round(audioPlayer.time/1000))+" : "+formatTime(Math.round(audioPlayer.duration/1000));
+   if (audioPlayer.time > 0) 
+   	{
+   		value = Math.floor((100 / audioPlayer.duration) * audioPlayer.time);
+   		}
         } 
       else 
 		{
 			
     var playedTime=formatTime(Math.round(audioPlayer.progress/1000))+" : "+formatTime(Math.round(audioPlayer.duration/1000));
+    if (audioPlayer.progress > 0) 
+   	{
+   		value = Math.floor((100 / audioPlayer.duration) * audioPlayer.progress);
+   		}
 
 		}       
    
    $.duration.setText(playedTime);
    
-   var value=0;
-   if (audioPlayer.time > 0) {
-      value = Math.floor((100 / audioPlayer.duration) * audioPlayer.time);
-   }
       
    $.timeProgress.applyProperties({width: value + "%" });
     
@@ -99,12 +121,28 @@ $.timeBar.addEventListener('click',function(e){
         
  function showQuestion() {
  	var questionWin=Alloy.createController('question',{question:q,index:epindex}).getView().open();
+   stopTrack() ;
     $.player.close();
 };
 
 
 function backHome(){
 
-$.player.close();
+	
+	var dialog = Ti.UI.createAlertDialog({
+		title :'العودة للقائمة الرئيسية',
+		message: 'بالعودة للقائمة الرئيسية ستفقد جميع المعلومات و لن يتم اعتبار الاجابات، هل أنت متأكد بأنك تريد العودة للقائمة الرئيسية ؟',
+		buttonNames: ['نعم','لا']
+	});
+	
+	dialog.addEventListener('click',function(e){
+		if(e.index==0)
+		{
+			stopTrack() ;
+			$.player.close();
+			}	
+	});
+
+dialog.show();
 	
 }

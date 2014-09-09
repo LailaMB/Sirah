@@ -2,7 +2,8 @@
 	<Window id="about">
 		<View class="container">
 		<Button id="homebtn" onClick="backHome"> Home </Button>	
-		<Label> This is About Us </Label>
+		<Label id="title"> مسابقة في ظلال السيرة </Label>
+		<TextArea id="aboutText"></TextArea>
 		</View>
 	</Window>
 </Alloy>

@@ -9,6 +9,7 @@
 			<Button id="ch3" onClick="checked"></Button>
 			<Button id="homebtn" onClick="backHome"> Home </Button>	
 			<Button id="nxtAudiobtn" onClick="nxtAudio"> Next </Button>	
+			<Label id="pageNumber"></Label>
 		</Window>
 	 <!-- </NavigationWindow> 	-->
 </Alloy>

@@ -9,5 +9,6 @@
 		<Button id="stopBtn" onClick="stopTrack"> Stop </Button>
 		<Button id="showQuestion" onClick="showQuestion"> Show Question </Button>
 		<Button id="homebtn" onClick="backHome"> Home </Button>	
+		<Label id="pageNumber"></Label>
 	</Window>
 </Alloy>

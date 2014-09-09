@@ -16,6 +16,12 @@ console.log("INDEX from question"+ args.index);
 
 var answer;
 
+var pageNumber= id%6;
+if (pageNumber == 0)
+{
+	pageNumber = 6 ;
+}
+$.pageNumber.text = pageNumber + "/6";
 
 
 
@@ -84,10 +90,23 @@ function checkAnswer()
 
 }
 
-
 function backHome(){
 
-$.question.close();
+	
+	var dialog = Ti.UI.createAlertDialog({
+		title :' العودة للقائمة الرئيسية',
+		message: 'بالعودة للقائمة الرئيسية ستفقد جميع المعلومات و لن يتم اعتبار الاجابات، هل أنت متأكد بأنك تريد العودة للقائمة الرئيسية ؟',
+		buttonNames: ['نعم','لا']
+	});
+	
+	dialog.addEventListener('click',function(e){
+		if(e.index==0)
+		{
+		$.question.close();
+			}	
+	});
 
+dialog.show();
 	
 }
+

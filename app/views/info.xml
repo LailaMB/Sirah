@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="info">
+		<View class="container">
+		<Button id="homebtn" onClick="backHome"> Home </Button>	
+		<Label id="title"> نادي النورين </Label>
+		<TextArea id="infoText"></TextArea>
+		</View>
+	</Window>
+</Alloy>

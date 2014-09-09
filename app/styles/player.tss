@@ -6,10 +6,6 @@
 }
 
 
-	
-
-
-
 "#playPauseBtn": {
 	top: '60dp',
 	font: {
@@ -53,16 +49,24 @@
 
 
 
+	
 "#nextAudio": {
 	top: '30dp',
 	font: {
 		fontSize: '16dp',
 		fonWeight: 'normal'
 	}}
-	
 
 "#homebtn":
 {	top:"80dp",
 	left:"250dp"
 	
 }
+
+"#pageNumber": {
+	bottom: '20dp',
+	textAlign:'center',
+	font: {
+		fontSize: '16dp',
+		fonWeight: 'normal'
+	}}

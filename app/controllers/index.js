@@ -11,8 +11,11 @@ var winAbout = Alloy.createController('about').getView();
 	};	
 
 function openInfo(e){
+	var winInfo = Alloy.createController('info').getView();
+	winInfo.open();
+	};
 
-	};		
+			
 	
 	
 $.index.open();

@@ -1,4 +1,3 @@
-
 ".container" : {
   	backgroundColor:"white"
 }
@@ -11,7 +10,7 @@
 "#title":{
 	top:"80dp",
 }
-"#aboutText":
+"#infoText":
 {
 	
 	  editable:'false',
