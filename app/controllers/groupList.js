@@ -20,6 +20,10 @@ function openDetails(e){
 
 
 
+function backHome(){
 
+$.groupList.close();
+	
+}
 
 $.groupList.open();

@@ -1,9 +1,13 @@
 <Alloy>
 	<Window id="index" class="container">
-		
-		<Button id="openList" onClick="openList"> Open List</Button>
-		<Button id="openAboutUs" onClick="openAboutUs"> About Us</Button>
-		<Button id="openInfo" onClick="openInfo">Info</Button>
+		<ImageView id="img_Bg" />
+        <ImageView id="img_Logo" />
+			
+		<Button onClick="onBtn_openlistClicked" id="btn_Openlist" />
+        <Button onClick="onBtn_openinfoClicked" id="btn_Openinfo" />
+        <Button onClick="onBtn_openaboutClicked" id="btn_Openabout" />
 		
 	</Window>
 </Alloy>
+
+

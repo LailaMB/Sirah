@@ -1,16 +1,16 @@
-function openList(e){
+function onBtn_openlistClicked(e){
 	//console.log('item Clicked '+ e.index);
 var winList = Alloy.createController('groupList').getView();
 
 	};
 	
-function openAboutUs(e){
+function onBtn_openaboutClicked(e){
 	//console.log('item Clicked '+ e.index);
 var winAbout = Alloy.createController('about').getView();
 	winAbout.open();
 	};	
 
-function openInfo(e){
+function onBtn_openinfoClicked(e){
 	var winInfo = Alloy.createController('info').getView();
 	winInfo.open();
 	};
