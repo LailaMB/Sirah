@@ -1,7 +1,16 @@
 var args = arguments[0] || {};
-function backHome(){
+function onImg_homebtnClicked(){
 
 $.info.close();
 	
 }
-$.infoText.value= "-  نادي النورين هو احد الاندية الطلابية في جامعة الدمام"+"\n "+""+"\n "+"";
+
+
+function onImg_logoClicked(){
+
+$.info.close();
+	
+}
+
+
+$.infoText.value= "-  مسابقة في ظلال السيرة هي مسابقة تقيمها جامعة الدمام "+"\n "+""+"\n "+"";

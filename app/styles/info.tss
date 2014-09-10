@@ -2,14 +2,27 @@
   	backgroundColor:"white"
 }
 
+"#info": {
+ //   "left": 0,
+  //  "width": "100%",
+    "navBarHidden": true,
+ //   "top": 0,
+    "height": "100%",
+    "left": "0%",
+    "width": "100%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "0%",
+    "height": "100%",
+    "backgroundImage": "/images/bg_image.png"
+}
+
 "#homebtn":
 {	top:"80dp",
 	left:"250dp"
 	
 }
-"#title":{
-	top:"80dp",
-}
+
 "#infoText":
 {
 	
@@ -21,13 +34,47 @@
 	  height:'auto',
 	  width:'auto',
 	  
-	  top:"130dp",
+	  top:"200dp",
 	  borderWidth:'2',
 	 borderColor:'#bbb',
 	  borderRadius:'5',
-	  backgroundColor:'white' , 
+	//  backgroundColor:'white' , 
+	  backgroundDisabledColor:'true',
 	  font: {
+	  	//font:''
 		fontSize: '12dp',
+		color:'white',
 		fonWeight: 'normal'
 	}
+}
+
+
+"#img_Bg": {
+    "left": "0%",
+    "width": "100%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "0%",
+    "height": "100%",
+    "image": "/images/bg_image.png"
+}
+
+"#img_Logo": {
+    "left": "30.52%",
+    "width": "35.52%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "10.27%",
+    "height": "19.65%",
+    "image": "/images/logo_image.png"
+}
+
+"#img_Homebtn": {
+    "left": "86.35%",
+    "width": "8.12%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "6.38%",
+    "height": "5.13%",
+    "image": "/images/homebtn_image.png"
 }

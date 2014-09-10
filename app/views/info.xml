@@ -1,9 +1,13 @@
 <Alloy>
 	<Window id="info">
-		<View class="container">
-		<Button id="homebtn" onClick="backHome"> Home </Button>	
-		<Label id="title"> نادي النورين </Label>
-		<TextArea id="infoText"></TextArea>
-		</View>
+	<!-- <ImageView id="img_Bg" />  -->	
+        <ImageView onClick="onImg_logoClicked" id="img_Logo" />
+        <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
+
+		<TextArea id="infoText"></TextArea>        	
+
+
+
+
 	</Window>
 </Alloy>
