@@ -1,9 +1,7 @@
 <Alloy>
 	<Window id="about">
-		<View class="container">
-		<Button id="homebtn" onClick="backHome"> Home </Button>	
-		<Label id="title"> مسابقة في ظلال السيرة </Label>
+        <ImageView onClick="onImg_logoClicked" id="img_Logo" />
+        <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
 		<TextArea id="aboutText"></TextArea>
-		</View>
 	</Window>
 </Alloy>

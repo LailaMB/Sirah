@@ -8,7 +8,7 @@ exports.definition = {
 			type: 'sql',
 			collection_name: 'groups',
 			idAttribute: 'id',
-			"db_file": "db.db3",
+			"db_file": "/db.db3",
 		}
 	}
 };

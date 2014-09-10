@@ -49,15 +49,6 @@
 }
 
 
-"#img_Bg": {
-    "left": "0%",
-    "width": "100%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "top": "0%",
-    "height": "100%",
-    "image": "/images/bg_image.png"
-}
 
 "#img_Logo": {
     "left": "30.52%",

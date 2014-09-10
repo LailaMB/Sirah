@@ -119,14 +119,14 @@ $.timeBar.addEventListener('click',function(e){
 });
         
         
- function showQuestion() {
+ function onBtn_showquestionClicked() {
  	var questionWin=Alloy.createController('question',{question:q,index:epindex}).getView().open();
    stopTrack() ;
     $.player.close();
 };
 
 
-function backHome(){
+function onImg_homebtnClicked(){
 
 	
 	var dialog = Ti.UI.createAlertDialog({

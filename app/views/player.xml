@@ -1,14 +1,17 @@
 <Alloy>
 	<Window id="player" class="container">
+		<ImageView  id="img_Logo" />
+		<ImageView id="img_Imageview1" />
+		<ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />		
 		<Label id="groupTextLbl"></Label>
 		<Label id="audioTextLbl"></Label>
-		<Button id="playPauseBtn" onClick="playtrack" >Play / Pause </Button>
+		<Button id="btn_Playpausebtn" onClick="playtrack"/>
+        <Button id="btn_Stopbtn" onClick="stopTrack"/>
 		<View id="timeBar"  width="250" height="10" backgroundColor="black"  >
 		<View id="timeProgress" width="1" height="10"  backgroundColor="gray" left="0" /></View>
 		<Label id="duration"></Label>
-		<Button id="stopBtn" onClick="stopTrack"> Stop </Button>
-		<Button id="showQuestion" onClick="showQuestion"> Show Question </Button>
-		<Button id="homebtn" onClick="backHome"> Home </Button>	
+		<Button onClick="onBtn_showquestionClicked" id="btn_Showquestion" />
 		<Label id="pageNumber"></Label>
+
 	</Window>
 </Alloy>

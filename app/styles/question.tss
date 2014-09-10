@@ -4,85 +4,175 @@
 	backgroundColor: 'white'
 }
 
+"#question": {
+    "left": "0%",
+    "width": "100%",
+    "navBarHidden": true,
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "-0.2%",
+    "height": "100%",
+    "backgroundImage":"/images/bg_image.png"
+}
+
+
+
+
+
+"#img_Logo": {
+    "left": "30.52%",
+    "width": "35.52%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "10.06%",
+    "height": "19.65%",
+    "image": "/images/logo_image.png"
+    
+}
+
+"#img_Homebtn": {
+    "left": "86.35%",
+    "width": "8.12%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "6.18%",
+    "height": "5.13%",
+    "image": "/images/homebtn_image.png"
+}
+
+
 
 "#questiontxt": {
-	top: '80dp',
-	font: {
-		fontSize: '20dp',
-		fontWeight: 'bold'
-	}
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "right": "26%",
+    "color": "#FFFFFF",
+    "width": "81%",
+    "top": "35.9%",
+    "height": "size"
 }
+
+
+
 
 
 "#ch1": {
-	top: '150dp',
-	font: {
-		fontSize: '20dp',
-		fontWeight: 'bold'
-	},
-	borderColor: '#666',
-    borderWidth: 2,
-    borderRadius: 3,
-    backgroundColor: '#fff',
-    backgroundImage: 'none',
-    color: '#fff',
-    font:{fontSize: 25, fontWeight: 'bold'},
-    value: false
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	    "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "right": "40%",
+    "color": "#000000",
+    "width": "13%",
+    "top": "51.52%",
+    "height": "size",
+    value: false,
+    "number":"1"
 }
 
 "#ch2": {
-	top: '230dp',
-		font: {
-		fontSize: '20dp',
-		fontWeight: 'bold'
-	},
-	borderColor: '#666',
-    borderWidth: 2,
-    borderRadius: 3,
-    backgroundColor: '#fff',
-    backgroundImage: 'none',
-    color: '#fff',
-    font:{fontSize: 25, fontWeight: 'bold'},
-    value: false
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    	"font": {
+    	    "fontSize": 12,
+        	"fontFamily": "HelveticaNeueW23forSKY-Reg"
+    		},
+    "right": "40%",
+    "color": "#000000",
+    "width": "13%",
+    "top": "59.44%",
+    "height": "size",
+    value: false,
+    "number":"2"
 }
 
 
 "#ch3": {
-	top: '300dp',
-		font: {
-		fontSize: '20dp',
-		fontWeight: 'bold'
-	},
-	borderColor: '#666',
-    borderWidth: 2,
-    borderRadius: 3,
-    backgroundColor: '#fff',
-    backgroundImage: 'none',
-    color: '#fff',
-    font:{fontSize: 25, fontWeight: 'bold'},
-    value: false
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "right": "40%",
+    "color": "#000000",
+    "width": "13%",
+    "top": "67.77%",
+    "height": "size",
+    value: false,
+    "number":"3"
 }
 
 
 
-
-
-"#homebtn":
-{	top:"40dp",
-	left:"250dp"
-	
+"#img_ch1img": {
+    "left": "80.72%",
+    "width": "5.1%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "50.97%",
+    "height": "3.54%",
+    "image": "/images/ch1img_image.png",
+    "number":"1"
 }
 
-"#nxtAudiobtn":
-{
-	top:"400dp",
-	
+"#img_ch2img": {
+    "left": "80.72%",
+    "width": "5.1%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "58.88%",
+    "height": "3.54%",
+    "image": "/images/ch2img_image.png",
+    "number":"2"    
+}
+
+"#img_ch3img": {
+    "left": "80.72%",
+    "width": "5.1%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "67.22%",
+    "height": "3.54%",
+    "image": "/images/ch3img_image.png",
+    "number":"3"    
+}
+
+
+
+"#btn_Nxtaudiobtn": {
+    "left": "32.08%",
+    "width": "34.68%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundImage": "/images/nxtAudiobtn_normal.png",
+    "top": "86.45%",
+    "height": "6.87%",
+    "backgroundSelectedImage": "/images/nxtAudiobtn_pressed.png"
 }
 
 "#pageNumber": {
-	bottom: '20dp',
-	textAlign:'center',
-	font: {
-		fontSize: '16dp',
-		fonWeight: 'normal'
-	}}
+    "font": {
+        "fontSize": 13,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "left": "46.04%",
+    "color": "#666666",
+    "width": "10%",
+    "text": "\tمن ٦ ",
+    "top": "95.13%",
+    "height": "size"
+}
+
+
+"#img_Imageview1": {
+    "left": "5.2%",
+    "width": "88.95%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "46.8%",
+    "height": "27.84%",
+    "image": "/images/imageView1_image.png"
+}

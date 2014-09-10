@@ -1,15 +1,23 @@
 <Alloy>
 	
 
-		<Window id ="question" class="container">
-	
+	<Window id ="question" class="container">
+        <ImageView id="img_Logo" />
+         <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />	
+         	<ImageView id="img_Imageview1" />
+
+
 			<Label id="questiontxt"></Label>
-			<Button id="ch1" onClick="checked"></Button>
-			<Button id="ch2" onClick="checked"></Button>
-			<Button id="ch3" onClick="checked"></Button>
-			<Button id="homebtn" onClick="backHome"> Home </Button>	
-			<Button id="nxtAudiobtn" onClick="nxtAudio"> Next </Button>	
+			<Label id="ch1" onClick="checked"></Label>
+			<Label id="ch2" onClick="checked"></Label>
+			<Label id="ch3" onClick="checked"></Label>
+			         	
+         	
+        	<ImageView id="img_ch1img" />
+        	<ImageView id="img_ch2img" />
+        	<ImageView id="img_ch3img" />
+        	
 			<Label id="pageNumber"></Label>
-		</Window>
-	 <!-- </NavigationWindow> 	-->
+			<Button onClick="onBtn_nxtaudiobtnClicked" id="btn_Nxtaudiobtn" />
+	</Window>
 </Alloy>
