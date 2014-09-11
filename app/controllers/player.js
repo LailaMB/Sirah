@@ -41,7 +41,9 @@ function playtrack () {
 
     if (audioPlayer.playing)
     {
-     audioPlayer.pause();	
+    $.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";	
+     audioPlayer.pause();
+
 
     }
     else
@@ -53,8 +55,8 @@ function playtrack () {
     		alert("فضلا تحقق من الاتصال");
     	}
     	else
-    	{
-    		console.log(" connection");
+    	{	
+   		    $.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_pressed.png";		
     		audioPlayer.start();
     	}
         
@@ -110,11 +112,19 @@ function formatTime(totalSeconds){
 
 $.timeBar.addEventListener('click',function(e){
 
-    var newTime =(e.x/250)*audioPlayer.duration;
-    audioPlayer.pause();
-    audioPlayer.setTime(newTime);
-    audioPlayer.start();
-    
+        if (Ti.Platform.name === 'android')
+     {
+     	var Xdp=Math.round(e.x / (Titanium.Platform.displayCaps.dpi / 160));
+     	
+     	var timePercent=Xdp / parseInt($.timeBar.width);
+   		var newTime =timePercent*audioPlayer.duration;
+	    audioPlayer.pause();
+	    audioPlayer.setTime(newTime);
+	    audioPlayer.start();
+     	
+     }
+
+
  
 });
         

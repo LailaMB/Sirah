@@ -61,7 +61,8 @@
     "backgroundImage": "/images/playPauseBtn_normal.png",
     "top": "48.47%",
     "height": "8.19%",
-    "backgroundSelectedImage": "/images/playPauseBtn_pressed.png"
+   
+    
 }
 
 "#btn_Stopbtn": {
@@ -81,8 +82,8 @@
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "left": "40.52%",
-     "color": "#666666",
-    "width": "61%",
+    "color": "#666666",
+    "width": "80%",
     "top": "66.8%",
     "height": "2.22%",
 }
@@ -133,4 +134,8 @@
     "top": "46.8%",
     "height": "27.91%",
     "image": "/images/imageView1_image.png"
+}
+
+"#timeBar":{
+	"top": "60%"
 }

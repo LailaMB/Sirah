@@ -1,9 +1,42 @@
 
 ".container" : {
-  	title: 'Question',
+  	title: 'register',
 	backgroundColor: 'white'
 }
 
+"#register": {
+    "left": "0%",
+    "width": "100%",
+    "navBarHidden": true,
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "0%",
+    "height": "100%",
+    "backgroundImage":"/images/bg_image.png"
+}
+
+
+"#img_Logo": {
+    "left": "30.52%",
+    "width": "35.52%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "10.27%",
+    "height": "19.65%",
+    "image": "/images/logo_image.png"
+}
+
+
+
+"#img_Homebtn": {
+    "left": "86.35%",
+    "width": "8.12%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "6.38%",
+    "height": "5.13%",
+    "image": "/images/homebtn_image.png"
+}
 
 
 

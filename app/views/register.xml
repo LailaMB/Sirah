@@ -1,11 +1,12 @@
 <Alloy>
 	<Window id="register" class="container">
-	<View class="container">
 		<Label id="grptxt"></Label>
 		<Label id="scoretxt"></Label>
-		<TextField id="name" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" top="150" left="10" width="250" height="30" />
-		<TextField id="phoneNumber" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" top="200" left="10" width="250" height="30" />
-	
-	</View>
+		<ImageView  id="img_Logo" />		
+		<ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />	
+		<TextField id="name" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" top="150" left="10" width="150" height="30" />
+		<TextField id="phoneNumber" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" top="200" left="10" width="180" height="30" />
+		<TextField id="uniName" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" top="250" left="10" width="150" height="30" />
+		<Button id="sendScore">Send </Button>
 	</Window>
 </Alloy>
