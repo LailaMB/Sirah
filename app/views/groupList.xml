@@ -6,13 +6,20 @@
 
 
 		<Window id ="groupList" class="container">
+			<ImageView id="img_Bg" />
+	        <ImageView id="img_Logo" />
+	        <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
+			
+			
 
 			
 			<ListView id="lst" defaultItemTemplate="listItemTemp" onItemclick="openDetails">
+
 				
 <!-- http://docs.appcelerator.com/titanium/latest/#!/guide/ListViews 	-->			
 				<Templates>
 					<ItemTemplate name="listItemTemp" >
+						
 						<Label bindId="title" />
 					</ItemTemplate>
 				</Templates>

@@ -20,7 +20,7 @@ function openDetails(e){
 
 
 
-function backHome(){
+function onImg_homebtnClicked(){
 
 $.groupList.close();
 	

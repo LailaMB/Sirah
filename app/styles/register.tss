@@ -38,6 +38,185 @@
     "image": "/images/homebtn_image.png"
 }
 
+"#sendScore":{
+	"top":"80%"
+}
+
+"#fullName":{
+	
+	"borderStyle":"Ti.UI.INPUT_BORDERSTYLE_ROUNDED",
+	"color":"#336699",
+	"top":"150", 
+	"left":"30%", 
+	"width":"150",
+	"height":"30"
+	
+}
+
+"#IdNumber":{
+	
+
+	"color":"#336699",
+	"top":"200", 
+	"left":"30%", 
+	"width":"150",
+	"height":"30"
+	
+}
+
+"#phoneNumber":{
+	
+	"color":"#336699",
+	"top":"250", 
+	"left":"30%", 
+	"width":"150",
+	"height":"30"
+	
+}
+
+"#uniName":{	
+
+	"color":"#336699",
+	"top":"300", 
+	"left":"30%", 
+	"width":"150",
+	"height":"30"
+	
+}
 
 
+"#lbl_Checkboxlbl": {
+    "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "left": "48.12%",
+    "color": "#666666",
+    "width": "45%",
+    "text": "أتعهد بالتقيد بالشروط ... ",
+    "top": "79.51%",
+    "height": "size"
+}
+
+"#txtFld_Fullname": {
+    "left": "10.31%",
+    "width": "56.66%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundImage": "/images/fullName_background.png",
+    "top": "37.77%",
+    "height": "6.04%",
+    "paddingLeft": "5",
+    "paddingRight": "5"
+}
+
+"#lbl_Fullnamelbl": {
+    "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "left": "72.39%",
+    "color": "#FFFFFF",
+    "width": "23%",
+    "text": "الإسم الرباعي",
+    "top": "39.93%",
+    "height": "size"
+}
+
+"#txtFld_Idnumber": {
+    "left": "10.31%",
+    "width": "56.66%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundImage": "/images/fullName_background.png",    
+    "top": "47.63%",
+    "height": "6.04%",
+    "paddingLeft": "5",
+    "paddingRight": "5"
+}
+
+"#lbl_Idnumberlbl": {
+    "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "left": "71.97%",
+    "color": "#FFFFFF",
+    "width": "24%",
+    "text": "الرقم الجامعي",
+    "top": "49.65%",
+    "height": "size"
+}
+
+"#lbl_Uninamelbl": {
+    "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "left": "76.56%",
+    "color": "#FFFFFF",
+    "width": "13%",
+    "text": "الجامعة",
+    "top": "59.86%",
+    "height": "size"
+}
+
+"#txtFld_Phonenumber": {
+    "left": "10.31%",
+    "width": "56.66%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundImage": "/images/fullName_background.png",    
+    "top": "67.36%",
+    "height": "6.04%",
+    "paddingLeft": "5",
+    "paddingRight": "5"
+}
+
+"#lbl_Phonenumberlbl": {
+    "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "left": "74.16%",
+    "color": "#FFFFFF",
+    "width": "19%",
+    "text": "رقم الجوال",
+    "top": "69.65%",
+    "height": "size"
+}
+
+"#btn_Sendscore": {
+    "left": "31.97%",
+    "width": "34.68%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundImage": "/images/sendScore_normal.png",
+    "top": "86.45%",
+    "height": "6.87%",
+    "backgroundSelectedImage": "/images/sendScore_pressed.png"
+}
+
+"#btn_Checkbox": {
+    "left": "87.29%",
+    "width": "4.79%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundImage": "/images/checkbox_normal.png",
+    "top": "79.02%",
+    "height": "3.19%",
+    "backgroundSelectedImage": "/images/checkbox_pressed.png"
+}
+
+"#txtFld_Uniname": {
+    "left": "10.31%",
+    "width": "56.66%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundImage": "/images/fullName_background.png",    
+    "top": "57.36%",
+    "height": "6.04%",
+    "paddingLeft": "5",
+    "paddingRight": "5"
+}
 

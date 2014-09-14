@@ -1,12 +1,32 @@
 <Alloy>
 	<Window id="register" class="container">
-		<Label id="grptxt"></Label>
-		<Label id="scoretxt"></Label>
+	<!--	<Label id="grptxt"></Label>
+		<Label id="scoretxt"></Label> -->
 		<ImageView  id="img_Logo" />		
-		<ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />	
-		<TextField id="name" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" top="150" left="10" width="150" height="30" />
-		<TextField id="phoneNumber" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" top="200" left="10" width="180" height="30" />
-		<TextField id="uniName" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" top="250" left="10" width="150" height="30" />
-		<Button id="sendScore">Send </Button>
+
+		
+		
+		 <ImageView id="img_Imageview1" />
+        <ImageView  id="img_Logo" />
+        <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
+
+        <TextField id="txtFld_Fullname" />
+        <Label id="lbl_Fullnamelbl" />
+        
+        <TextField id="txtFld_Idnumber" />
+        <Label id="lbl_Idnumberlbl" />
+        
+        <Label id="lbl_Uninamelbl" />
+        <TextField id="txtFld_Uniname" />
+
+        <Label id="lbl_Phonenumberlbl" />
+        <TextField id="txtFld_Phonenumber" />
+        
+        <Label id="lbl_Checkboxlbl" />        
+        <Button id="btn_Checkbox" />
+
+        <Button id="btn_Sendscore" onClick="sendScore"/>
+        
+        		
 	</Window>
 </Alloy>
