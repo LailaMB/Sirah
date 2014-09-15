@@ -1,11 +1,14 @@
 <Alloy>
-	<Window id="info">
+	<Window id="info" title="">
 	<!-- <ImageView id="img_Bg" />  -->	
         <ImageView onClick="onImg_logoClicked" id="img_Logo" />
         <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
-
-		<TextArea id="infoText"></TextArea>        	
-
+       
+        <Label id="infoTitle">مسابقة في ظلال السيرة</Label>
+		<ImageView id="img_Imageview1"/>
+		<ScrollView id="infoView"> 
+	    <Label id="infoText"> high</Label>
+	    </ScrollView>   
 
 
 

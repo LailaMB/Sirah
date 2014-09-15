@@ -5,7 +5,7 @@
 <!--<NavigationWindow id="index" module="xp.ui"> 	-->
 
 
-		<Window id ="groupList" class="container">
+		<Window id ="groupList" class="container" title="">
 			<ImageView id="img_Bg" />
 	        <ImageView id="img_Logo" />
 	        <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />

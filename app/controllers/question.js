@@ -6,9 +6,9 @@ Alloy.Collections.sirah.fetch();
 
 
 $.questiontxt.text=args.question.question;
-$.ch1.text=args.question.ch1;
-$.ch2.text=args.question.ch2;
-$.ch3.text=args.question.ch3;
+$.ch1Txt.text=args.question.ch1;
+$.ch2Txt.text=args.question.ch2;
+$.ch3Txt.text=args.question.ch3;
 var correctAnswer=args.question.correct;
 var grpid=args.question.groupid;
 var id = args.question.id;
@@ -17,11 +17,33 @@ var id = args.question.id;
 var answer;
 
 var pageNumber= id%6;
-	if (pageNumber == 0)
-	{
-		pageNumber = 6 ;
-	}
-$.pageNumber.text = pageNumber + "/6";
+if (pageNumber == 0)
+{
+	pageNumber = "٦/٦";
+}
+else if (pageNumber == 1)
+{
+	pageNumber = "٦/١";
+}
+else if (pageNumber == 2)
+{
+	pageNumber = "٦/٢";
+}
+else if (pageNumber == 3)
+{
+	pageNumber = "٦/٣";
+}
+else if (pageNumber == 4)
+{
+	pageNumber = "٦/٤";
+}
+else if (pageNumber == 5)
+{
+	pageNumber = "٦/٥";
+} 
+
+$.pageNumber.text = pageNumber ;
+
 
 
 
@@ -78,7 +100,7 @@ function checkAnswer()
  	{
 	    $.ch1.value=$.ch2.value=$.ch3.value=false;
 	    $.img_ch1img.image=$.img_ch2img.image=$.img_ch3img.image="/images/ch1img_image.png";
-	    $.ch1.backgroundColor=$.ch2.backgroundColor=$.ch3.backgroundColor="red";
+	    $.ch1.backgroundColor=$.ch2.backgroundColor=$.ch3.backgroundColor="Transparent";
 	    this.value = true;
 
 	    if(this.number==$.img_ch1img.number)

@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="index" class="container">
+	<Window id="index" class="container" title="">
 		<ImageView id="img_Bg" />
         <ImageView id="img_Logo" />
 			

@@ -49,43 +49,60 @@
     "backgroundImage": "/images/showQuestion_normal.png",
     "top": "86.45%",
     "height": "6.87%",
-    "backgroundSelectedImage": "/images/showQuestion_pressed.png"
+    "backgroundSelectedImage": "/images/showQuestion_pressed.png",
+   // "enabled": "false"
+    
+   
 }
 
+ "#waitingAudio": {  "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "left": "67.91%",
+    "color": "#666666",
+    "width": "28%",
+    "top": "51.04%",
+    "height": "size"
+ 	
+ }
 
 "#btn_Playpausebtn": {
-    "left": "22.81%",
-    "width": "12.29%",
+    "left": "21.1%",
+    "width": "14.6%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/playPauseBtn_normal.png",
-    "top": "48.47%",
-    "height": "8.19%",
+    "top": "5%",
+    "height": "27.6%",
    
     
 }
 
 "#btn_Stopbtn": {
-    "left": "8.75%",
-    "width": "12.29%",
+    "left": "4.75%",
+    "width": "14.6%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/stopBtn_normal.png",
-    "top": "48.47%",
-    "height": "8.19%",
+    "top": "5%",
+    "height": "27.6%",
     "backgroundSelectedImage": "/images/stopBtn_pressed.png"
 }
 
 "#audioTextLbl": {
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
 	"font": {
         "fontSize": 12,
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    "left": "40.52%",
+    "right": "7.5%",
+    //"left": "5%",
     "color": "#666666",
-    "width": "80%",
-    "top": "66.8%",
-    "height": "2.22%",
+    "width": "87%",
+    "top": "70%",
+    "bottom": "5%",
+    "height": "size",
 }
 
 "#duration": {
@@ -94,21 +111,22 @@
     },
     "left": "8.64%",
     "color": "#666666",
-    "width": "20%",
-    "top": "64.02%",
-    "height": "1.31%",
+    "width": "size",
+    "top": "55%",
+    "height": "size",
 
 }
 
 "#groupTextLbl": {
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
         "fontSize": 12,
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    "left": "67.91%",
+    "right": "5%",
     "color": "#666666",
-    "width": "28%",
-    "top": "51.04%",
+    "width": "size",
+    "top": "14%",
     "height": "size"
 }
 
@@ -136,6 +154,15 @@
     "image": "/images/imageView1_image.png"
 }
 
+"#plyView": {
+    "left": "5.2%",
+    "width": "89.16%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "46.8%",
+    "height": "27.91%"
+}
+
 "#timeBar":{
-	"top": "60%"
+	"top": "47%"
 }

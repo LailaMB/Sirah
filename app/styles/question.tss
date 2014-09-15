@@ -48,7 +48,8 @@
         "fontSize": 12,
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    "right": "26%",
+    "right": "10%",
+    "left": "10%",
     "color": "#FFFFFF",
     "width": "81%",
     "top": "35.9%",
@@ -60,30 +61,18 @@
 
 
 "#ch1": {
-	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
-	    "font": {
-        "fontSize": 12,
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    "right": "40%",
-    "color": "#000000",
-    "width": "13%",
-    "top": "51.52%",
+    "right": "5%",
+    "width": "75%",
+    "top": "20%",
     "height": "size",
     value: false,
     "number":"1"
 }
 
 "#ch2": {
-	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
-    	"font": {
-    	    "fontSize": 12,
-        	"fontFamily": "HelveticaNeueW23forSKY-Reg"
-    		},
-    "right": "40%",
-    "color": "#000000",
-    "width": "13%",
-    "top": "59.44%",
+    "right": "5%",
+    "width": "75%",
+    "top": "45%",
     "height": "size",
     value: false,
     "number":"2"
@@ -91,51 +80,82 @@
 
 
 "#ch3": {
-	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
-    "font": {
-        "fontSize": 12,
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    "right": "40%",
-    "color": "#000000",
-    "width": "13%",
-    "top": "67.77%",
+    "right": "5%",
+    "width": "75%",
+    "top": "70%",
     "height": "size",
     value: false,
     "number":"3"
 }
 
 
+"#ch1Txt": {
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	    "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "right": "20%",
+    "color": "#000000",
+    "width": Titanium.UI.SIZE,
+    "height": "size",
+}
+
+"#ch2Txt": {
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    	"font": {
+    	    "fontSize": 12,
+        	"fontFamily": "HelveticaNeueW23forSKY-Reg"
+    		},
+    "right": "20%",
+    "color": "#000000",
+    "width": Titanium.UI.SIZE,
+    "height": "size",
+}
+
+
+"#ch3Txt": {
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "font": {
+        "fontSize": 12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "right": "20%",
+    "color": "#000000",
+    "width": Titanium.UI.SIZE,
+    "height": "size",
+}
+
 
 "#img_ch1img": {
-    "left": "80.72%",
-    "width": "5.1%",
+    "right": "10%",
+    //"width": "5.1%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "top": "50.97%",
-    "height": "3.54%",
+    //"top": "50.97%",
+    //"height": "3.54%",
     "image": "/images/ch1img_image.png",
     "number":"1"
 }
 
 "#img_ch2img": {
-    "left": "80.72%",
-    "width": "5.1%",
+    "right": "10%",
+    //"width": "5.1%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "top": "58.88%",
-    "height": "3.54%",
+    //"top": "58.88%",
+    //"height": "3.54%",
     "image": "/images/ch2img_image.png",
     "number":"2"    
 }
 
 "#img_ch3img": {
-    "left": "80.72%",
-    "width": "5.1%",
+    "right": "10%",
+    //"width": "5.1%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "top": "67.22%",
-    "height": "3.54%",
+    //"top": "67.22%",
+    //"height": "3.54%",
     "image": "/images/ch3img_image.png",
     "number":"3"    
 }
@@ -175,4 +195,17 @@
     "top": "46.8%",
     "height": "27.84%",
     "image": "/images/imageView1_image.png"
+
 }
+
+"#choices": {
+    "left": "5.2%",
+    "width": "88.95%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "46.8%",
+    "height": "27.84%"
+}
+
+
+

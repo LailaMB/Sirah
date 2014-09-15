@@ -1,21 +1,30 @@
 <Alloy>
 	
 
-	<Window id ="question" class="container">
+	<Window id ="question" class="container" title="">
         <ImageView id="img_Logo" />
          <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />	
-         	<ImageView id="img_Imageview1" />
-
-
-			<Label id="questiontxt"></Label>
-			<Label id="ch1" onClick="checked"></Label>
-			<Label id="ch2" onClick="checked"></Label>
-			<Label id="ch3" onClick="checked"></Label>
-			         	
          	
-        	<ImageView id="img_ch1img" />
-        	<ImageView id="img_ch2img" />
-        	<ImageView id="img_ch3img" />
+			<Label id="questiontxt"></Label>
+
+            <ImageView id="img_Imageview1"/> 			
+			<View id="choices">
+			  <View id="ch1" onClick="checked">
+			  	<ImageView id="img_ch1img" />
+			  	<Label id="ch1Txt"></Label>
+			  </View>
+			  
+			  <View id="ch2" onClick="checked">
+			  	<ImageView id="img_ch2img" />
+			  	<Label id="ch2Txt"></Label>
+			  </View>
+			  
+			  <View id="ch3" onClick="checked">
+			  	<ImageView id="img_ch3img" />
+			  	<Label id="ch3Txt"></Label>
+			  </View>     	
+        	
+        	</View>
         	
 			<Label id="pageNumber"></Label>
 			<Button onClick="onBtn_nxtaudiobtnClicked" id="btn_Nxtaudiobtn" />

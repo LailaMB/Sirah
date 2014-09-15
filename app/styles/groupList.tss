@@ -19,20 +19,6 @@
 	color: "#000"
 } 
 
-"#label": {
-	font: {
-		fontSize: 12
-	}
-}
-
-"#homebtn":
-{	top:"80dp",
-	left:"250dp"
-	
-}
-
-
-
 
 "#img_Logo": {
     "left": "41.35%",
@@ -104,4 +90,8 @@
     "text": "المجموعة الأولى",
     "top": "36.64%",
     "height": "size"
+}
+
+"#lst": {
+	top: '17%',
 }

@@ -1,7 +1,11 @@
 <Alloy>
-	<Window id="about">
+	<Window id="about" title="">
         <ImageView onClick="onImg_logoClicked" id="img_Logo" />
         <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
-		<TextArea id="aboutText"></TextArea>
+		<Label id="aboutTitle">نادي النورين</Label>
+		<ImageView id="img_Imageview1"/>
+		<ScrollView id="aboutView"> 
+	    <Label id="aboutText"> high</Label>
+	    </ScrollView>
 	</Window>
 </Alloy>

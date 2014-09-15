@@ -10,9 +10,30 @@ $.groupTextLbl.text = args.group.get('title');
 var pageNumber= epindex%6;
 if (pageNumber == 0)
 {
-	pageNumber = 6 ;
+	pageNumber = "٦/٦";
 }
-$.pageNumber.text = pageNumber + "/6";
+else if (pageNumber == 1)
+{
+	pageNumber = "٦/١";
+}
+else if (pageNumber == 2)
+{
+	pageNumber = "٦/٢";
+}
+else if (pageNumber == 3)
+{
+	pageNumber = "٦/٣";
+}
+else if (pageNumber == 4)
+{
+	pageNumber = "٦/٤";
+}
+else if (pageNumber == 5)
+{
+	pageNumber = "٦/٥";
+}  
+
+$.pageNumber.text = pageNumber ;
 
 
 
@@ -28,50 +49,68 @@ var q={
 
 	
 
-
-
-
 var audioPlayer = Ti.Media.createAudioPlayer({ 
-    url: "http://islam-call.com/uploads/Audio/1273/"+audionum+".mp3",
+    url: "http://d1.islamhouse.com/data/ar/ih_sounds/chain/ar_Fe_Thilal_Asiyrah/ar_Fe_Thilal_Asiyrah_"+audionum+".mp3",
     allowBackground: true
 });  
 
 
 function playtrack () {
-
-    if (audioPlayer.playing)
-    {
-    $.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";	
-     audioPlayer.pause();
-
-
-    }
-    else
-    {
-    	if (Titanium.Network.online==false)
+	
+	if (Titanium.Network.online == false )
     	{
-    		 audioPlayer.pause();
+    		
+    		$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
     		console.log("no connection");
     		alert("فضلا تحقق من الاتصال");
     	}
+    	
     	else
-    	{	
-   		    $.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_pressed.png";		
-    		audioPlayer.start();
-    	}
-        
-    }
-};
+    	
+    	{
+    		 if (audioPlayer.playing)
+    		 {
+    		 	$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
+    		 	audioPlayer.pause();
+    		 	}
+    		 	
+    		 	else
+    		 	{
+    		 		 $.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_pressed.png";
+    		 		 audioPlayer.start();
+    		 		 }         
+    	 }
+     };
 
 
 
 function stopTrack() {
-        audioPlayer.stop();
-        if (Ti.Platform.name === 'android')
-        { 
-            audioPlayer.release();
-        }  }
+	
+	$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
+	
+	audioPlayer.stop(); 
+    
+    if (Ti.Platform.name === 'android')
+    {
+    	audioPlayer.release();
+    	$.duration.setText("00:00 : 00:00");
+    	$.timeProgress.applyProperties({width: "0" });
+    	audioPlayer.setTime(0);
+    	}          
+        }
 
+
+
+
+Titanium.Network.addEventListener('change', function(e){
+	if (e.online == false)
+		{ 
+			stopTrack();
+			$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
+    	    console.log("no connection event!");
+    	    alert("فضلا تحقق من الاتصال");
+    	}
+	});
 
 audioPlayer.addEventListener('progress',function(e) 
 {
@@ -83,6 +122,7 @@ audioPlayer.addEventListener('progress',function(e)
    	{
    		value = Math.floor((100 / audioPlayer.duration) * audioPlayer.time);
    		}
+   
         } 
       else 
 		{
@@ -112,7 +152,7 @@ function formatTime(totalSeconds){
 
 $.timeBar.addEventListener('click',function(e){
 
-        if (Ti.Platform.name === 'android')
+     if (Ti.Platform.name === 'android')
      {
      	var Xdp=Math.round(e.x / (Titanium.Platform.displayCaps.dpi / 160));
      	
@@ -121,9 +161,8 @@ $.timeBar.addEventListener('click',function(e){
 	    audioPlayer.pause();
 	    audioPlayer.setTime(newTime);
 	    audioPlayer.start();
-     	
+     	$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_pressed.png";
      }
-
 
  
 });
@@ -131,7 +170,12 @@ $.timeBar.addEventListener('click',function(e){
         
  function onBtn_showquestionClicked() {
  	var questionWin=Alloy.createController('question',{question:q,index:epindex}).getView().open();
-   stopTrack() ;
+    $.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
+	audioPlayer.stop(); 
+	if (Ti.Platform.name === 'android')
+	{
+		audioPlayer.release();
+	} 
     $.player.close();
 };
 
@@ -148,10 +192,18 @@ function onImg_homebtnClicked(){
 	dialog.addEventListener('click',function(e){
 		if(e.index==0)
 		{
-			stopTrack() ;
-			$.player.close();
-			}	
+			$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
+			audioPlayer.stop(); 
+			if (Ti.Platform.name === 'android')
+			{
+				audioPlayer.release();
+				}  
+				$.player.close();
+				}	
 	});
+	
+
+  
 
 dialog.show();
 	

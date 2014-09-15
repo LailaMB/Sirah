@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="register" class="container">
+	<Window id="register" class="container" title="">
 	<!--	<Label id="grptxt"></Label>
 		<Label id="scoretxt"></Label> -->
 		<ImageView  id="img_Logo" />		
